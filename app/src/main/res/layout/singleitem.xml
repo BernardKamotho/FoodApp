@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    app:cardElevation="10dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="10dp">
+
+<!--    below is a linear layout that will help us
+organise views vertically-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="2dp"
+            android:id="@+id/item_image"
+            android:src="@drawable/food1"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--item title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_title"
+                android:text="Food Title"
+                android:textSize="25sp"
+                android:textColor="#FF9800"
+                android:textStyle="bold"/>
+            <!-- item Cost       -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:id="@+id/item_cost"
+                android:text="3000 Kes"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#DA0A51"/>
+
+
+        </LinearLayout>
+        <!--item Details        -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:text="Item Description"
+            android:textColor="#0DAE8F"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:backgroundTint="#4E4C4B">
+
+<!--        Welcome Text-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcomeText"
+            android:text="Welcome To Delicacy"
+            android:textSize="30sp"
+            android:textColor="#D50E71"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:background="@drawable/shape"
+            android:padding="20dp"
+            android:translationY="-200dp"/>
+
+<!--        Left Image-->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:id="@+id/imageLeft"
+            android:src="@drawable/humb1"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:translationX="-1000dp"/>
+
+<!--        Right Image-->
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:id="@+id/imageRight"
+            android:src="@drawable/humb3"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:translationX="1000dp"/>
+
+<!--        signature-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/singature"
+            android:text="Developed By Bernard."
+            android:textColor="#D50E71"
+            android:textSize="18sp"
+            android:background="@drawable/shape2"
+            android:padding="13dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:translationY="500dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
