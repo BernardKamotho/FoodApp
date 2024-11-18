@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Ingredients</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #d9534f;
+}
+
+/* Burger Styles */
+.burger {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.bun {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bun.top {
+    background-color: #e0a545;
+    box-shadow: 0 4px 0 #d48b37;
+    position: relative;
+}
+
+.bun.top::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #fff3c4;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.bun.bottom {
+    background-color: #e0a545;
+    box-shadow: 0 -4px 0 #d48b37;
+}
+
+/* Ingredient Styles */
+.ingredients {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.ingredient {
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+/* Specific Ingredients */
+.cheese {
+    background-color: #f1c40f;
+}
+
+.patty {
+    background-color: #8b4513;
+}
+
+.tomato {
+    background-color: #e74c3c;
+}
+
+.lettuce {
+    background-color: #27ae60;
+}
+
+.bacon {
+    background-color: #c0392b;
+}
+
+.onion {
+    background-color: #bdc3c7;
+}
+
+.pickles {
+    background-color: #2ecc71;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🍔 Build Your Perfect Burger 🍔</h1>
+    <div class="burger">
+        <div class="bun top">Top Bun</div>
+        <div class="ingredients">
+            <div class="ingredient cheese">Cheese</div>
+            <div class="ingredient patty">Beef Patty</div>
+            <div class="ingredient tomato">Tomato</div>
+            <div class="ingredient lettuce">Lettuce</div>
+            <div class="ingredient bacon">Bacon</div>
+            <div class="ingredient onion">Onions</div>
+            <div class="ingredient pickles">Pickles</div>
+        </div>
+        <div class="bun bottom">Bottom Bun</div>
+    </div>
+</div>
+</body>
+</html>

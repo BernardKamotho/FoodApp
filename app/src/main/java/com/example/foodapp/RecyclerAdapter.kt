@@ -68,16 +68,51 @@ class RecyclerAdapter(var context: Context) : RecyclerView.Adapter<RecyclerAdapt
         viewHolder.itemImage.setImageResource(images[i])
         viewHolder.itemCost.text = cost[i]
         //Below to be Done At the End to demonstrate how to move to Next Page on Item Click
-//        viewHolder.itemView.setOnClickListener {
-//            Toast.makeText(context, "Item Position"+i, Toast.LENGTH_SHORT).show()
-//            if(i == 0) {
-//                val x = Intent(context, Bugger::class.java)
-//                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-//                context.startActivity(x)
-//            }
-//            //Others.
-//
-//        }
+        viewHolder.itemView.setOnClickListener {
+            Toast.makeText(context, "Item Position"+i, Toast.LENGTH_SHORT).show()
+            if(i == 0) {
+                val x = Intent(context, Burger::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            //Others.
+            if(i == 1) {
+                val x = Intent(context, FishFillet::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 2) {
+                val x = Intent(context, Breakfast::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 3) {
+                val x = Intent(context, Snacks::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 4) {
+                val x = Intent(context, ChineseMeal::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 5) {
+                val x = Intent(context, Spaghetti::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 6) {
+                val x = Intent(context, Rice::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+            if(i == 7) {
+                val x = Intent(context, Freshy::class.java)
+                x.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context.startActivity(x)
+            }
+
+        }
     }
 
     // Get how many items the array have, All arrays must have equal sizes

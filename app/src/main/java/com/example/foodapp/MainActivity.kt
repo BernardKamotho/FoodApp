@@ -23,16 +23,13 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
         //specify the layout manager
-        val layoutmanager = LinearLayoutManager(applicationContext)
 
         //put the kayout manager to the recyclerview. It will be allinged vertically
-        recyclerView.layoutManager = layoutmanager
-
+        recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         //access the recycycler adapater (The one that contains the data)
-        val adapter = RecyclerAdapter(applicationContext)
 
         //Specicfy onto which adapter our recyclerview is getting data from
-        recyclerView.adapter = adapter
+        recyclerView.adapter = RecyclerAdapter(applicationContext)
 
         //DONE
 
